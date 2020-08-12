@@ -1,0 +1,270 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(235, 255, 4, 0.35);
+}
+
+html, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+body {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+#main-nav .wrapper {
+  padding: 0;
+  background-color: #fff;
+}
+
+#main-nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main-nav li {
+  float: left;
+  width: 20%;
+}
+
+#main-nav li:hover {
+  background-color: #977c8d;
+}
+
+#main-nav a {
+  color: #d40a87;
+  text-decoration: none;
+  padding: 1em 0;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#main-nav a:hover {
+  color: #fff;
+}
+
+section h1 {
+  font-size: 3em;
+  color: #d40a87;
+  text-align: center;
+}
+
+.lead-banner {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.lead-banner .banner-content {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+.lead-banner, .banner-image {
+  background-color: #8BD2E2;
+}
+
+.lead-banner img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.credit {
+  float: right;
+  font-size: 0.8em;
+  margin-right: 5%;
+}
+
+.credit a:hover {
+  color: #fff;
+}
+
+.lead-banner span {
+  display: block;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.lead-banner span.title {
+  font-size: 3em;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.lead-banner span.sub-title {
+  font-family: cursive;
+  font-weight: normal;
+  font-size: 5em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+
+.lessons-banner {
+  width: 100%;
+  background-image: linear-gradient(#FFAF71, #fff);
+}
+
+.lessons-banner .banner-content {
+  width: 100%;
+  padding: 10% 0;
+}
+
+.lessons-banner img {
+  width: 100%;
+}
+
+.lessons-banner span {
+  display: block;
+}
+
+.lessons-banner span.title {
+  color: #d40a87;
+  font-size: 3em;
+  text-align: center;
+}
+
+.fun-items-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.fun-items {
+  width: 40%;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 2em 1em;
+}
+
+.fun-items li {
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+/* #animation {
+  margin-top: -110px;
+} */
+
+#services {
+  background-color: #8BD2E2;
+  padding: 10%;
+}
+
+#services li {
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  width: 33.3333333333%;
+}
+
+#services img {
+  width: 60%;
+  margin: 20px 20%;
+}
+
+#services a {
+  color: #d40a87;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#services a:hover {
+  color: #fff;
+}
+
+#services ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#projects {
+  background-color: #8BD2E2;
+}
+
+#projects .wrapper {
+  padding: 10% 0;
+}
+
+#projects ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* #projects li {
+  float: left;
+
+  Auto calculate width based on number of columns (minus one) and margin input
+  width: 26.6666666667%;
+}
+
+#projects li:nth-child(3n) {
+  margin-right: 0;
+} */
+#projects li img {
+  width: 100%;
+  border: 2px solid #d40a87;
+  border-radius: 50%;
+}
+
+footer {
+  padding: 3em;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .lead-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lead-banner span.title, .lessons-banner span.title, section h1 {
+    font-size: 2em;
+  }
+
+  .lead-banner span.sub-title {
+    font-size: 3em;
+  }
+
+  #services a, .fun-items li {
+    font-size: 1em;
+  }
+
+  .lessons-banner span.sub-title {
+    font-size: 1.5em;
+  }
+}
